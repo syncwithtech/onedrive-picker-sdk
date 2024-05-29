@@ -9,6 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p .",
+    "postinstall": "npm run build",
     "watch": "tsc -p . --watch",
     "clean": "del-cli \"./?(dist|build)\"",
     "validate-package-content": "npx npm-packlist"
